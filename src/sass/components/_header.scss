@@ -1,0 +1,28 @@
+
+
+.header-page{
+    // max-width: 480px;
+    // height: 400px;
+    background-image: url(../img/Slider.jpg);
+}
+
+.nav__link {
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: $header-color;
+}
+
+.header__tel{
+    
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: $header-color;
+}

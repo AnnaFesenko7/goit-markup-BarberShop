@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,8 +16,435 @@
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <header class="header-page">
+      <nav>
+        <a href="">
+          <svg class="logo-icon" width="65.97" height="55.46">
+            <use href="./img/symbol-defs.svg#icon-Logo">
+              
+            </use>
+          </svg>
+        </a>
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link" href="">О нас</a>
+          </li>
+          <li>
+            <a class="nav__link" href="">Услуги и цены</a>
+          </li>
+          <li>
+            <a class="nav__link" href="">Мастера</a>
+          </li>
+          <li>
+            <a class="nav__link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="button" type="button">онлайн-запись</button>
+    </header>
+    <main>
+      <section class="hero">
+        <ul>
+          <li>
+            <a href="">Instagram</a>
+          </li>
+          <li>
+            <a href="">Youtube</a>
+          </li>
+        </ul>
+        <div>
+          <p lang="en">A hair salon for men in Kyiv</p>
+          <h1 lang="en">BarberShop</h1>
+          <p>Мы эксперты в модных мужских стрижках.
+            Работаем быстро, осторожно и со вкусом.</p>
+        </div>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <img loading="lazy" srcset="
+                              ./img/about1-270@1x.jpg 270w,
+                              ./img/about1-330@1x.jpg 330w,
+                              ./img/about1-540@2x.jpg 540w,
+                              ./img/about1-660@2x.jpg 660w
+                              " src="./img/about1-330@1x.jpg" alt="Барбер бреет бороду" sizes="(min-width:768px) 50vw,
+                              (min-width:1200px) 25vw">
+          </li>
+          <li>
+            <img loading="lazy" srcset="
+                                  ./img/about2-270@1x.jpg 270w,
+                                  ./img/about2-330@1x.jpg 330w,
+                                  ./img/about2-540@2x.jpg 540w,
+                                  ./img/about2-660@2x.jpg 660w
+                                  " src="./img/about2-330@1x.jpg" alt="Барбер стрижет кантик" sizes="(min-width:768px) 50vw,
+                                  (min-width:1200px) 25vw">
+          </li>
+        </ul>
+        <div>
+          <p>О НАС</p>
+          <h2>Лучший Барбершоп
+            твоего города</h2>
+          <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+          <p>Мы команда, которая никогда не останавливается на достигнутом
+            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы
+            всегда
+            готовы усовершенствовать каждого, кто к нам приходит!</p>
+          <button type="button">онлайн-запись</button>
+        </div>
+      </section>
+      <section>
+        <p>Проведи время в компании лучших мастеров</p>
+        <h2>Услуги и цены</h2>
+        <ul>
+          <li>
+            <p>Мужская стрижка</p>
+            <p>от 300 грн.</p>
+          </li>
+          <li>
+            <p>Стрижка бороды</p>
+            <p>от 200 грн.</p>
+          </li>
+          <li>
+            <p>Стрижка усов</p>
+            <p>от 200 грн.</p>
+          </li>
+          <li>
+            <p>Бритье опасной бритвой</p>
+            <p>от 200 грн.</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Cтрижка у стажера</p>
+            <p>от 50 грн.</p>
+          </li>
+          <li>
+            <p>Стрижка под насадку</p>
+            <p>от 200 грн.</p>
+          </li>
+          <li>
+            <p>Детская стрижка (до 12 лет)</p>
+            <p>от 300 грн.</p>
+          </li>
+          <li>
+            <p>Камуфлирование седины</p>
+            <p>от 200 грн.</p>
+          </li>
+        </ul>
+        <button type="button">онлайн-запись</button>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <span>600</span>
+            <p>Довольных клиентов в день</p>
+          </li>
+    
+          <li>
+            <span>50</span>
+            <p>Наград за отличный сервис</p>
+          </li>
+    
+          <li>
+            <span>20</span>
+            <p>Лучших мастеров Киева</p>
+          </li>
+    
+          <li>
+            <span>100</span>
+            <p>Подарков постоянным клиентам</p>
+          </li>
+        </ul>
+        <div>
+          <p>старая традиционная школа</p>
+          <h2>Почему приходят именно к нам?</h2>
+          <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+        </div>
+      </section>
+      <section>
+        <p>для настоящих ценителей атмосферы</p>
+        <h2>Наши мастера</h2>
+        <ul class="team__list">
+    
+          <li class="team__card">
+            <picture>
+              <source srcset="
+                                      ./img/john@1x-418mob.webp 1x, 
+                                      ./img/john@2x-836mob.webp 2x" media="(max-width: 767px)" type="image/webp" />
+    
+              <source srcset="
+                                      ./img/john@1x-418mob.jpg 1x, 
+                                      ./img/john@2x-836mob.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
+    
+              <!-- <source srcset="
+                                      ./img/john@1x-450tablet.webp 1x, 
+                                      ./img/john@2x-900tablet.webp 2x" media="(min-width: 768px)" type="image/webp" /> -->
+    
+    
+              <!-- <source srcset="
+                                      ./img/john@1x-450tablet.jpg 1x, 
+                                      ./img/john@2x-900tablet.jpg 2x" media="(min-width: 768px)" type="image/jpeg" /> -->
+    
+              <source srcset="
+                                      ./img/john@1x-370dextop.webp 1x, 
+                                      ./img/john@2x-740dextop.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+    
+              <source srcset="
+                                      ./img/john@1x-370dextop.jpg 1x, 
+                                      ./img/john@2x-740dextop.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
+    
+    
+              <img src="./img/john@1x-450tablet.jpg" alt="John Smith">
+            </picture>
+    
+            <div class="team__thumb">
+              <h3 class="team__name">John Smith</h3>
+              <p class="team__post">Extreme Barber</p>
+    
+    
+              <ul class="networks">
+                <li class="networks__item">
+                  <a href="" aria-label="instagram" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+    
+                <li class="networks__item">
+                  <a href="" aria-label="twitter" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+                <li class="networks__item">
+                  <a href="" aria-label="facebook" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+    
+                  </a>
+    
+                </li>
+                <li class="networks__item">
+                  <a href="" aria-label="linkedin" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+              </ul>
+            </div>
+          </li>
+    
+    
+          <li class="team__card">
+            <picture>
+              <source srcset="
+                                      ./img/michele@1x-418mob.webp 1x, 
+                                      ./img/michele@2x-836mob.webp 2x" media="(max-width: 767px)" type="image/webp" />
+    
+              <source srcset="
+                                      ./img/michele@1x-418mob.jpg 1x, 
+                                      ./img/michele@2x-836mob.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
+    
+              <source srcset="
+                                      ./img/michele@1x-450tablet.webp 1x, 
+                                      ./img/michele@2x-900tablet.webp 2x" media="(min-width: 768px)" type="image/webp" />
+    
+    
+              <source srcset="
+                                      ./img/michele@1x-450tablet.jpg 1x, 
+                                      ./img/michele@2x-900tablet.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+    
+              <source srcset="
+                                      ./img/michele@1x-370dextop.webp 1x, 
+                                      ./img/michele@2x-740dextop.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+    
+              <source srcset="
+                                      ./img/michele@1x-370dextop.jpg 1x, 
+                                      ./img/michele@2x-740dextop.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
+    
+    
+              <img src="./img/michele@1x-450tablet.jpg" alt="Michele Doe">
+            </picture>
+    
+            <div class="team__thumb">
+              <h3 class="team__name">Michele Doe</h3>
+              <p class="team__post">Extreme Barber</p>
+    
+    
+              <ul class="networks">
+                <li class="networks__item">
+                  <a href="" aria-label="instagram" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+    
+                <li class="networks__item">
+                  <a href="" aria-label="twitter" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+                <li class="networks__item">
+                  <a href="" aria-label="facebook" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+    
+                  </a>
+    
+                </li>
+                <li class="networks__item">
+                  <a href="" aria-label="linkedin" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+              </ul>
+            </div>
+          </li>
+    
+          <li class="team__card">
+            <picture>
+              <source srcset="
+                                      ./img/alan@1x-418mob.webp 1x, 
+                                      ./img/alan@2x-836mob.webp 2x" media="(max-width: 767px)" type="image/webp" />
+    
+              <source srcset="
+                                      ./img/alan@1x-418mob.jpg 1x, 
+                                      ./img/alan@2x-836mob.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
+    
+              <source srcset="
+                                      ./img/alan@1x-450tablet.webp 1x, 
+                                      ./img/alan@2x-900tablet.webp 2x" media="(min-width: 768px)" type="image/webp" />
+    
+    
+              <source srcset="
+                                      ./img/alan@1x-450tablet.jpg 1x, 
+                                      ./img/alan@2x-900tablet.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+    
+              <source srcset="
+                                      ./img/alan@1x-370dextop.webp 1x, 
+                                      ./img/alan@2x-740dextop.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+    
+              <source srcset="
+                                      ./img/alan@1x-370dextop.jpg 1x, 
+                                      ./img/alan@2x-740dextop.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
+    
+    
+              <img src="./img/alan@1x-450tablet.jpg" alt="Alan Black">
+            </picture>
+    
+            <div class="team__thumb">
+              <h3 class="team__name">Alan Black</h3>
+              <p class="team__post">Extreme Barber</p>
+    
+    
+              <ul class="networks">
+                <li class="networks__item">
+                  <a href="" aria-label="instagram" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+    
+                <li class="networks__item">
+                  <a href="" aria-label="twitter" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+                <li class="networks__item">
+                  <a href="" aria-label="facebook" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+    
+                  </a>
+    
+                </li>
+                <li class="networks__item">
+                  <a href="" aria-label="linkedin" class="networks__link">
+                    <svg class="networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+    
+        <p>На латинском языке “барба” означает “борода”</p>
+        <h2>Фотогаллерея</h2>
+        <ul>
+          <li>
+            <img src="" alt="">
+          </li>
+          <li>
+            <img src="" alt="">
+          </li>
+          <li>
+            <img src="" alt="">
+          </li>
+          <li>
+            <img src="" alt="">
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Онлайн-запись</h2>
+      </section>
+      <section>
+        <address>
+          <h2>Контакты</h2>
+          <ul>
+            <li>
+              <a href="" target="_blank" rel="noreferrer noopener">ул. Васильковая, 7А
+                Киев, 08132</a>
+            </li>
+            <li>
+              <a href="tel:+380441111111">+38 044 111 11 11</a>
+            </li>
+            <li>
+              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            </li>
+          </ul>
+        </address>
+        <p>время работы</p>
+        <p>Ежедневно с 9:00 до 22:00</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2020</p>
+      <ul>
+        <li>
+          <a href="">Instagram</a>
+        </li>
+        <li>
+          <a href="">Youtube</a>
+        </li>
+      </ul>
+    </footer>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
