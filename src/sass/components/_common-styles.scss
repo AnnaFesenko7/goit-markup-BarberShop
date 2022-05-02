@@ -15,14 +15,16 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p {
     margin: 0;
 }
 
 img {
     display: block;
-    max-width: 100%;
+    // max-width: 100%;
     height: auto;
+    margin: 0;
 }
 
 a {
@@ -31,4 +33,147 @@ a {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button{
+    cursor: pointer;
+}
+
+// section{
+
+//     max-width: 1280px;
+//     margin: 0 auto;
+// }
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    min-width: 160px;
+    height: 40px;
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+
+    transition: color 300ms $timing-function;
+    transition: background-color 300ms $timing-function;
+}
+.btn:hover, .btn:active{
+    background-color: $accent-color;
+    color: $primary-title-color;
+    
+}
+
+.btn-light{
+    color: $primary-title-color;
+    
+}
+
+
+.btn-dark{
+    color: $extra-title-color;
+}
+
+
+.pre__title{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+   
+    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+.pre__title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    
+    margin-right: 20px;
+}
+
+.pre__title--light{
+    color: rgba(157, 164, 189, 0.6);
+}
+.pre__title--light::before{
+    background-color: rgba(157, 164, 189, 0.6);
+}
+.pre__title--dark{
+    color: $extra-title-color;
+}
+.pre__title--dark::before{
+    background-color: $secon-text-color;
+}
+
+.after__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+
+
+    letter-spacing: 0.02em;
+
+    
+}
+
+.after__title--light{
+    color: $third-text-color;
+
+}
+
+.after__title--dark{
+    color: $primary-text-color;
+}
+
+
+.section__title {
+    font-family: 'Raleway', sans-serif;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+
+    
+}
+
+.section__title--light{
+    color: $primary-title-color;
+}
+
+.section__title--dark{
+    color: $extra-title-color;
 }

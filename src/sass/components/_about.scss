@@ -1,0 +1,43 @@
+.about{
+    padding-top: 139px;
+    padding-bottom: 121px;
+}
+
+.about__cotainer{
+    display: flex;
+}
+.about__list{
+   
+    display: flex;
+    margin-right: 64px;
+}
+.about__item:first-child{
+    margin-right: 30px;
+}
+
+
+
+.about__pre-title {
+    margin-bottom: 20px;
+   
+}
+
+
+.about__title,
+.about__after-title {
+    margin-bottom: 20px;
+}
+
+.about__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+
+    letter-spacing: 0.02em;
+
+    color: $primary-text-color;
+
+    margin-bottom: 40px;
+    width: 480px;
+
+}
