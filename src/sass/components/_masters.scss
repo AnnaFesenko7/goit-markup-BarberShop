@@ -27,7 +27,27 @@
     
 }
 
+.masters__card:hover .masters__description{
+    transform: translateY(0);
+}
 
+.masters__wrap{
+    position: relative;
+    overflow: hidden;
+}
+
+.masters__description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $accent-color, $alpha: 0.75);
+    color: #fff;
+    line-height: 1.5;
+    padding: 60px 40px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+}
 .masters__thumb{
     margin-top: 30px;
 }

@@ -31,8 +31,8 @@
             </svg>
           </a>
           <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#about">О нас</a>
+            <li class="nav__item ">
+              <a class="nav__link current" href="#about">О нас</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#prices">Услуги и цены</a>
@@ -47,7 +47,7 @@
         </nav>
         <div class="header__connect">
         <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="btn btn-light header__btn" type="button">онлайн-запись</button>
+        <button class="btn btn-light header__btn" type="button" data-modal-open="">онлайн-запись</button>
         </div>
       </div>
     </header>
@@ -107,7 +107,7 @@
             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы
             всегда
             готовы усовершенствовать каждого, кто к нам приходит!</p>
-          <button class="btn btn-dark" type="button">онлайн-запись</button>
+          <button class="btn btn-dark" type="button" data-modal-open>онлайн-запись</button>
         </div>
         </div>
       </section>
@@ -153,7 +153,7 @@
               </li>
             </ul>
           </div>
-          <button class="btn btn-light prices__btn" type="button">онлайн-запись</button>
+          <button class="btn btn-light prices__btn" type="button" data-modal-open>онлайн-запись</button>
       </div>
       </section>
       <section class="reasons">
@@ -227,8 +227,11 @@
               <img src="./img/john@1x-450tablet.jpg" alt="John Smith">
             </picture> -->
              
-            
+            <div class="masters__wrap">
             <img src="./img/john.jpg" alt=""width="370" height="346">
+            <p class="masters__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta, illum non harum sint eius aperiam deleniti sapiente ipsa expedita numquam aliquam accusantium cumque tempore quidem fuga atque error excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa. 
+            </p>
+            </div>
             <div class="masters__thumb">
               <h3 class="masters__name">John Smith</h3>
               <p class="masters__post">Extreme Barber</p>
@@ -303,7 +306,13 @@
     
               <img src="./img/michele@1x-450tablet.jpg" alt="Michele Doe">
             </picture> -->
+            <div class="masters__wrap">
             <img src="./img/michele.jpg" alt=""width="370" height="346">
+            <p class="masters__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta, illum non harum
+              sint eius aperiam deleniti sapiente ipsa expedita numquam aliquam accusantium cumque tempore quidem fuga atque error
+              excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa.
+            </p>
+            </div>
             <div class="masters__thumb">
               <h3 class="masters__name">Michele Doe</h3>
               <p class="masters__post">Extreme Barber</p>
@@ -377,7 +386,13 @@
     
               <img src="./img/alan@1x-450tablet.jpg" alt="Alan Black">
             </picture> -->
+            <div class="masters__wrap">
             <img src="./img/alan.jpg" alt="" width="370" height="346">
+            <p class="masters__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta, illum non harum
+              sint eius aperiam deleniti sapiente ipsa expedita numquam aliquam accusantium cumque tempore quidem fuga atque error
+              excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa.
+            </p>
+            </div>
             <div class="masters__thumb">
               <h3 class="masters__name">Alan Black</h3>
               <p class="masters__post">Extreme Barber</p>
@@ -453,8 +468,25 @@
       <div class="feedback" id="contacts">
         <!-- <div class="container feedback__container"> -->
       <section class="online">
-       
-          <h2 class="section__title section__title--light">Онлайн-запись</h2>
+        <form action="" class="modal__form">
+          <p class="form__text section__title--light">Онлайн-запись</p>
+          <div class="input__wraper">
+          <label class="form__field form__field--light">
+            <span class="form__field--text">Имя<span class="form_symbol">*</span></span>
+            <input type="text" class="form__input form__input-light" name="name">
+          </label>
+          <label class="form__field form__field--light">
+            <span class="form__field--text">Телефон<span class="form_symbol">*</span></span>
+            <input type="tel" class="form__input form__input-light" name="tel">
+          </label>
+          </div>
+          <label class="form__field form__field--light">
+            <span class="form__field--text">Комментрарий</span>
+            <textarea class="form__message form__message-light" name="message"></textarea>
+          </label>
+          <button class="form__btn btn btn-light" type="submit">отправить</button>
+        </form>
+         
       </section>
       <section class="contacts" >
         <address class="contacts__address">
@@ -504,6 +536,34 @@
       </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__btn btn btn-dark" data-modal-close>
+          <svg class="modal__close">
+            <use href="./img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        
+        <form action="" class="modal__form">
+          <p class="form__text section__title--dark">Онлайн-запись</p>
+          
+          <label class="form__field form__field--dark" >
+          <span class="form__field--text">Имя<span class="form_symbol">*</span></span>
+          <input type="text" class="form__input form__input-dark" name="name">
+          </label>
+            <label class="form__field form__field--dark">
+              <span class="form__field--text">Телефон<span class="form_symbol">*</span></span>
+              <input type="tel" class="form__input form__input-dark" name="tel">
+            </label>
+          
+            <label class="form__field form__field--dark">
+              <span class="form__field--text">Комментрарий</span>
+              <textarea  class="form__message form__message-dark" name="message"></textarea>
+            </label>
+            <button class="form__btn btn btn-dark " type="submit">отправить</button>
+        </form>
+      </div>
+    </div>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>

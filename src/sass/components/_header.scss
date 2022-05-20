@@ -31,6 +31,17 @@
     margin-right: 40px;
 }
 
+.nav__link.current::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    bottom: -45px;
+    display: block;
+}
+
 .nav__link {
 
     font-weight: 600;
@@ -40,6 +51,7 @@
 
     color: $header-color;
     transition: color 300ms $timing-function;
+    position: relative;
 }
 
 .nav__link:hover, .nav__link:focus{
