@@ -2,7 +2,11 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{"./../img/Slider-img3.jpg":[["Slider-img3.bfbb8895.jpg","QEgB"],"QEgB"],"./../img/prices-bg.png":[["prices-bg.8b899227.png","KbGX"],"KbGX"],"./../img/contacts-bg.png":[["contacts-bg.7a464e29.png","GXTE"],"GXTE"]}],"TOx8":[function(require,module,exports) {
 
+},{}],"WcsN":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.manageModalWindow=void 0;const e=()=>{const e={openModalBtn:document.querySelectorAll("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};for(let t of e.openModalBtn)t.addEventListener("click",o);function o(o){e.modal.classList.toggle("is-hidden")}e.closeModalBtn.addEventListener("click",o)};exports.manageModalWindow=e;
+},{}],"qr24":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.manageNavigation=void 0;const e=()=>{const e=document.querySelectorAll(".nav__link");for(let r of e)r.addEventListener("click",t);function t(e){document.querySelector(".current").classList.remove("current"),this.classList.add("current")}};exports.manageNavigation=e;
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("animate.css");
-},{"./sass/main.scss":"clu1","animate.css":"TOx8"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-markup-BarberShop/src.4ec69e21.js.map
+"use strict";require("./sass/main.scss"),require("animate.css");var a=require("./js/modal-window"),i=require("./js/navigation");(0,a.manageModalWindow)(),(0,i.manageNavigation)();
+},{"./sass/main.scss":"clu1","animate.css":"TOx8","./js/modal-window":"WcsN","./js/navigation":"qr24"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-markup-BarberShop/src.353fe27f.js.map
