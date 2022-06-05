@@ -3,35 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-      rel="stylesheet">
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
-      
     />
-    
   </head>
   <body>
-   
     <header class="header">
       <div class="container header__container">
-
         <nav class="header__nav">
           <a class="nav__logo animate__animated animate__rubberBand" href="">
             <svg class="nav__icon" width="65.97" height="55.46">
-              <use href="./img/symbol-defs.svg#icon-Logo">
-                
-              </use>
+              <use href="./img/symbol-defs.svg#icon-Logo"></use>
             </svg>
           </a>
           <ul class="nav__list">
-            <li class="nav__item ">
+            <li class="nav__item">
               <a class="nav__link current" href="#about">О нас</a>
             </li>
             <li class="nav__item">
@@ -45,75 +41,146 @@
             </li>
           </ul>
         </nav>
+
+        <button class="burger__btn" data-menu-open>
+          <svg class="burger__icon">
+            <use href="./img/symbol-defs.svg#icon-menu_mob"></use>
+          </svg>
+        </button>
+
+        <div class="menu is-hidden" data-menu>
+          <button class="menu__btn" data-menu-close>
+            <svg class="menu__icon">
+              <use href="./img/symbol-defs.svg#icon-close_mob"></use>
+            </svg>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#prices">Услуги и цены</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#masters">Мастера</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu__connect">
+            <a class="menu__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="btn btn-dark" type="button" data-modal-open="">онлайн-запись</button>
+          </div>
+
+          <ul class="social__list social__list--menu">
+            <li class="social__item social__item--menu">
+              <a class="social__link" href="">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">Youtube</a>
+            </li>
+          </ul>
+        </div>
+
         <div class="header__connect">
-        <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="btn btn-light header__btn" type="button" data-modal-open="">онлайн-запись</button>
+          <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="btn btn-light header__btn" type="button" data-modal-open>
+            онлайн-запись
+          </button>
         </div>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__left">
-            <ul class="hero__list">
-              <li class="hero__item">
-                <a class="hero__link" href="">Instagram</a>
+            <ul class="social__list hero__list">
+              <li class="social__item">
+                <a class="social__link" href="">Instagram</a>
               </li>
-              <li class="hero__item">
-                <a class="hero__link" href="">Youtube</a>
+              <li class="social__item">
+                <a class="social__link" href="">Youtube</a>
               </li>
             </ul>
-        </div>
-        <div class="hero__right">
-          <p class="pre__title pre__title--light hero__pre-title" lang="en">A hair salon for men in Kyiv</p>
-          <h1 class="hero__title" lang="en">BarberShop</h1>
-          <p class="after__title after__title--light hero__after-title">Мы эксперты в модных мужских стрижках.
-            Работаем быстро, осторожно и со вкусом.</p>
-        </div>
+          </div>
+          <!-- <div class="slider">
+            <div class="siema">
+              <div><img src="./img/Slider3-desktop@1x.jpg" /></div>
+              <div><img src="./img/Slider-img2.jpg" /></div>
+              <div><img src="./img/Slider-img1.jpg" /></div>
+            </div class="slider__buttons">
+            <button class="prev">prev</button>
+            <button class="next">next</button>
+          </div> -->
+
+          <div class="hero__right">
+            <p class="pre__title pre__title--light hero__pre-title" lang="en">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero__title" lang="en">BarberShop</h1>
+            <p class="after__title after__title--light hero__after-title">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+            </p>
+          </div>
         </div>
       </section>
-      
+
       <section class="about" id="about">
-        <div class="container about__cotainer">
-        <ul class="about__list">
-          <li class="about__item">
-            <img src="./img/about1.jpg" alt="" width="270" height="445">
-            <!-- <img loading="lazy" srcset="
-                              ./img/about1-270@1x.jpg 270w,
-                              ./img/about1-330@1x.jpg 330w,
-                              ./img/about1-540@2x.jpg 540w,
-                              ./img/about1-660@2x.jpg 660w
-                              " src="./img/about1-330@1x.jpg" alt="Барбер бреет бороду" sizes="(min-width:768px) 50vw,
-                              (min-width:1200px) 25vw"> -->
-          </li>
-          <li class="about__item">
-            <img src="./img/about2.jpg" alt="" width="270" height="445">
-            <!-- <img loading="lazy" srcset="
-                                  ./img/about2-270@1x.jpg 270w,
-                                  ./img/about2-330@1x.jpg 330w,
-                                  ./img/about2-540@2x.jpg 540w,
-                                  ./img/about2-660@2x.jpg 660w
-                                  " src="./img/about2-330@1x.jpg" alt="Барбер стрижет кантик" sizes="(min-width:768px) 50vw,
-                                  (min-width:1200px) 25vw"> -->
-          </li>
-        </ul>
-        <div class="about__right">
-          <p class="pre__title pre__title--dark about__pre-title" >О НАС</p>
-          <h2 class="section__title section__title--dark about__title">Лучший Барбершоп
-            твоего города</h2>
-          <p class="after__title after__title--dark about__after-title">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-          <p class="about__text">Мы команда, которая никогда не останавливается на достигнутом
-            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы
-            всегда
-            готовы усовершенствовать каждого, кто к нам приходит!</p>
-          <button class="btn btn-dark" type="button" data-modal-open>онлайн-запись</button>
-        </div>
+        <div class="container about__container">
+          <ul class="about__list">
+            <li class="about__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./img/about1-desktop@1x.jpg 1x, ./img/about1-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./img/about1-tablet@1x.jpg 1x, ./img/about1-tablet@2x.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+            </li>
+            <li class="about__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./img/about2-desktop@1x.jpg 1x, ./img/about2-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./img/about2-tablet@1x.jpg 1x, ./img/about2-tablet@2x.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+            </li>
+          </ul>
+          <div class="about__right">
+            <p class="pre__title pre__title--dark about__pre-title">О НАС</p>
+            <h2 class="section__title section__title--dark about__title">
+              Лучший Барбершоп твоего города
+            </h2>
+            <p class="after__title after__title--dark about__after-title">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+            </p>
+            <p class="about__text">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+              когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+              команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="btn btn-dark" type="button" data-modal-open>онлайн-запись</button>
+          </div>
         </div>
       </section>
-      <section class="prices" id="prices">
+
+      <section class="prices">
         <div class="container">
-          <p class="pre__title pre__title--light prices__pre-title">Проведи время в компании лучших мастеров</p>
+          <p class="pre__title pre__title--light prices__pre-title">
+            Проведи время в компании лучших мастеров
+          </p>
           <h2 class="section__title section__title--light prices__title">Услуги и цены</h2>
           <div class="prices__wrapp">
             <ul class="prices__list prices__list--left">
@@ -153,9 +220,12 @@
               </li>
             </ul>
           </div>
-          <button class="btn btn-light prices__btn" type="button" data-modal-open>онлайн-запись</button>
-      </div>
+          <button class="btn btn-light prices__btn" type="button" data-modal-open>
+            онлайн-запись
+          </button>
+        </div>
       </section>
+
       <section class="reasons">
         <div class="container reasons__container">
           <div class="reasons__left">
@@ -187,7 +257,8 @@
           <p class="after__title after__title--dark ">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
         </div>
         </div c>
-      </section>
+      </section> 
+
       <section class="masters" id="masters">
         <div class="container ">
         <p class="pre__title pre__title--dark masters__pre-title">для настоящих ценителей атмосферы</p>
@@ -195,40 +266,27 @@
         <ul class="masters__list">
     
           <li class="masters__card">
-           
-            <!-- <picture>
-
-              <source srcset="
-                                      ./img/john@1x-418mob.webp 1x, 
-                                      ./img/john@2x-836mob.webp 2x" media="(max-width: 767px)" type="image/webp" />
-    
-              <source srcset="
-                                      ./img/john@1x-418mob.jpg 1x, 
-                                      ./img/john@2x-836mob.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
-    
-               <source srcset="
-                                      ./img/john@1x-450tablet.webp 1x, 
-                                      ./img/john@2x-900tablet.webp 2x" media="(min-width: 768px)" type="image/webp" /> 
-    
-    
-              <source srcset="
-                                      ./img/john@1x-450tablet.jpg 1x, 
-                                      ./img/john@2x-900tablet.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-    
-              <source srcset="
-                                      ./img/john@1x-370dextop.webp 1x, 
-                                      ./img/john@2x-740dextop.webp 2x" media="(min-width: 1200px)" type="image/webp" />
-    
-              <source srcset="
-                                      ./img/john@1x-370dextop.jpg 1x, 
-                                      ./img/john@2x-740dextop.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
-    
-    
-              <img src="./img/john@1x-450tablet.jpg" alt="John Smith">
-            </picture> -->
              
             <div class="masters__wrap">
-            <img src="./img/john.jpg" alt=""width="370" height="346">
+               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  type="image/jpeg" 
+                  srcset="./img/john@1x-370dextop.jpg 1x, ./img/john@2x-740dextop.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  type="image/jpeg" 
+                  srcset="./img/john@1x-450tablet.jpg 1x, ./img/john@2x-900tablet.jpg 2x"
+                />
+                  <source
+                  media="(max-width:767px)"
+                  type="image/jpeg" 
+                  srcset="./img/john@1x-418mob.jpg 1x, ./img/john@2x-836mob.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+            <!-- <img src="./img/john.jpg" alt=""width="370" height="346"> -->
             <p class="masters__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta, illum non harum sint eius aperiam deleniti sapiente ipsa expedita numquam aliquam accusantium cumque tempore quidem fuga atque error excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa. 
             </p>
             </div>
@@ -277,37 +335,27 @@
     
     
           <li class="masters__card">
-            <!-- <picture>
-              <source srcset="
-                                      ./img/michele@1x-418mob.webp 1x, 
-                                      ./img/michele@2x-836mob.webp 2x" media="(max-width: 767px)" type="image/webp" />
-    
-              <source srcset="
-                                      ./img/michele@1x-418mob.jpg 1x, 
-                                      ./img/michele@2x-836mob.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
-    
-              <source srcset="
-                                      ./img/michele@1x-450tablet.webp 1x, 
-                                      ./img/michele@2x-900tablet.webp 2x" media="(min-width: 768px)" type="image/webp" />
-    
-    
-              <source srcset="
-                                      ./img/michele@1x-450tablet.jpg 1x, 
-                                      ./img/michele@2x-900tablet.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-    
-              <source srcset="
-                                      ./img/michele@1x-370dextop.webp 1x, 
-                                      ./img/michele@2x-740dextop.webp 2x" media="(min-width: 1200px)" type="image/webp" />
-    
-              <source srcset="
-                                      ./img/michele@1x-370dextop.jpg 1x, 
-                                      ./img/michele@2x-740dextop.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
-    
-    
-              <img src="./img/michele@1x-450tablet.jpg" alt="Michele Doe">
-            </picture> -->
+        
             <div class="masters__wrap">
-            <img src="./img/michele.jpg" alt=""width="370" height="346">
+               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  type="image/jpeg" 
+                  srcset="./img/michele@1x-370dextop.jpg 1x, ./img/michele@2x-740dextop.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  type="image/jpeg" 
+                  srcset="./img/michele@1x-450tablet.jpg 1x, ./img/michele@2x-900tablet.jpg 2x"
+                />
+                  <source
+                  media="(max-width:767px)"
+                  type="image/jpeg" 
+                  srcset="./img/michele@1x-418mob.jpg 1x, ./img/michele@2x-836mob.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+            <!-- <img src="./img/michele.jpg" alt=""width="370" height="346"> -->
             <p class="masters__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta, illum non harum
               sint eius aperiam deleniti sapiente ipsa expedita numquam aliquam accusantium cumque tempore quidem fuga atque error
               excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa.
@@ -357,37 +405,27 @@
           </li>
     
           <li class="masters__card">
-            <!-- <picture>
-              <source srcset="
-                                      ./img/alan@1x-418mob.webp 1x, 
-                                      ./img/alan@2x-836mob.webp 2x" media="(max-width: 767px)" type="image/webp" />
-    
-              <source srcset="
-                                      ./img/alan@1x-418mob.jpg 1x, 
-                                      ./img/alan@2x-836mob.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
-    
-              <source srcset="
-                                      ./img/alan@1x-450tablet.webp 1x, 
-                                      ./img/alan@2x-900tablet.webp 2x" media="(min-width: 768px)" type="image/webp" />
-    
-    
-              <source srcset="
-                                      ./img/alan@1x-450tablet.jpg 1x, 
-                                      ./img/alan@2x-900tablet.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-    
-              <source srcset="
-                                      ./img/alan@1x-370dextop.webp 1x, 
-                                      ./img/alan@2x-740dextop.webp 2x" media="(min-width: 1200px)" type="image/webp" />
-    
-              <source srcset="
-                                      ./img/alan@1x-370dextop.jpg 1x, 
-                                      ./img/alan@2x-740dextop.jpg 2x" media="(min-width: 1200px)" type="image/jpeg" />
-    
-    
-              <img src="./img/alan@1x-450tablet.jpg" alt="Alan Black">
-            </picture> -->
+          
             <div class="masters__wrap">
-            <img src="./img/alan.jpg" alt="" width="370" height="346">
+               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  type="image/jpeg" 
+                  srcset="./img/alan@1x-370dextop.jpg 1x, ./img/alan@2x-740dextop.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  type="image/jpeg" 
+                  srcset="./img/alan@1x-450tablet.jpg 1x, ./img/alan@2x-900tablet.jpg 2x"
+                />
+                  <source
+                  media="(max-width:767px)"
+                  type="image/jpeg" 
+                  srcset="./img/alan@1x-418mob.jpg 1x, ./img/alan@2x-836mob.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+            <!-- <img src="./img/alan.jpg" alt="" width="370" height="346"> -->
             <p class="masters__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta, illum non harum
               sint eius aperiam deleniti sapiente ipsa expedita numquam aliquam accusantium cumque tempore quidem fuga atque error
               excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa.
@@ -436,13 +474,11 @@
             </div>
           </li>
 
-        
-        
         </ul>
         </div>
       </section>
 
-      <section class="gallery">
+      <!-- <section class="gallery">
         <div class="container">
           <p class="pre__title pre__title--dark gallery__pre-title">На латинском языке “барба” означает “борода”</p>
           <h2 class="visually-hidden">Фотогаллерея</h2>
@@ -461,16 +497,13 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section>
-        <h2 class="section__title section__title--light">Онлайн-запись</h2>
-      </section>
-      <div class="feedback" id="contacts">
-        <!-- <div class="container feedback__container"> -->
-      <section class="online">
+      </section> -->
+
+      <!-- <div class="feedback" id="contacts">
+        <section class="online">
         <form action="" class="modal__form">
           <p class="form__text section__title--light">Онлайн-запись</p>
-          <div class="input__wraper">
+          <div class="input__wrapper">
           <label class="form__field form__field--light">
             <span class="form__field--text">Имя<span class="form_symbol">*</span></span>
             <input type="text" class="form__input form__input-light" name="name">
@@ -520,10 +553,9 @@
         <p class="contacts__text">Ежедневно с 9:00 до 22:00</p>
        
       </section>
-      </div>
-      <!-- </section> -->
+      </div> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
       <p class="footer__copy">&copy; Copyright 2020</p>
       <ul class="footer__list">
@@ -535,7 +567,7 @@
         </li>
       </ul>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn btn btn-dark" data-modal-close>
@@ -543,29 +575,28 @@
             <use href="./img/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        
+
         <form action="" class="modal__form">
           <p class="form__text section__title--dark">Онлайн-запись</p>
-          
-          <label class="form__field form__field--dark" >
-          <span class="form__field--text">Имя<span class="form_symbol">*</span></span>
-          <input type="text" class="form__input form__input-dark" name="name">
+
+          <label class="form__field form__field--dark">
+            <span class="form__field--text">Имя<span class="form_symbol">*</span></span>
+            <input type="text" class="form__input form__input-dark" name="name" />
           </label>
-            <label class="form__field form__field--dark">
-              <span class="form__field--text">Телефон<span class="form_symbol">*</span></span>
-              <input type="tel" class="form__input form__input-dark" name="tel">
-            </label>
-          
-            <label class="form__field form__field--dark">
-              <span class="form__field--text">Комментрарий</span>
-              <textarea  class="form__message form__message-dark" name="message"></textarea>
-            </label>
-            <button class="form__btn btn btn-dark " type="submit">отправить</button>
+          <label class="form__field form__field--dark">
+            <span class="form__field--text">Телефон<span class="form_symbol">*</span></span>
+            <input type="tel" class="form__input form__input-dark" name="tel" />
+          </label>
+
+          <label class="form__field form__field--dark">
+            <span class="form__field--text">Комментрарий</span>
+            <textarea class="form__message form__message-dark" name="message"></textarea>
+          </label>
+          <button class="form__btn btn btn-dark" type="submit">отправить</button>
         </form>
       </div>
     </div>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
 </html>

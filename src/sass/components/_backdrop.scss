@@ -1,0 +1,16 @@
+.backdrop {
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba($color: #303030, $alpha: 0.35);
+  position: fixed;
+  top: 0;
+  transition: opacity 300ms linear, visibility 300ms var(--timing-function);
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}

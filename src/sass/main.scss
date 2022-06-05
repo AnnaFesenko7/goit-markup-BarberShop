@@ -1,17 +1,24 @@
-
 @import './utile/variables';
+@import './utile/visually-hidden';
 
-@import './components/common-styles';
+@import './base/common';
 
-@import './components/header';
-@import './components/hero';
-@import './components/about';
-@import './components/prices';
-@import './components/reasons';
-@import './components/masters';
-
-@import './components/feedback';
-@import './components/gallery';
-@import './components/footer';
+@import './components/container';
+@import './components/button';
+@import './components/title';
+@import './components/networks-links';
 @import './components/modal-window';
 @import './components/form';
+@import './components/backdrop';
+@import './components/menu';
+@import './components/social-list';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/prices';
+@import './layout/reasons';
+@import './layout/masters';
+@import './layout/feedback';
+@import './layout/gallery';
+@import './layout/footer';

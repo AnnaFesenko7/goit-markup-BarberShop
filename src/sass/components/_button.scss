@@ -1,0 +1,29 @@
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  transition: color 300ms var(--timing-function), background-color 300ms var(--timing-function);
+
+  &:hover,
+  &:active {
+    background-color: var(--accent-color);
+    color: var(--primary-title-color);
+  }
+}
+
+.btn-light {
+  color: var(--primary-title-color);
+}
+
+.btn-dark {
+  color: var(--extra-title-color);
+}
