@@ -286,7 +286,7 @@
                 />
                 <img src="#" alt="" />
               </picture>
-            <!-- <img src="./img/john.jpg" alt=""width="370" height="346"> -->
+            
             <p class="masters__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta, illum non harum sint eius aperiam deleniti sapiente ipsa expedita numquam aliquam accusantium cumque tempore quidem fuga atque error excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa. 
             </p>
             </div>
@@ -478,28 +478,100 @@
         </div>
       </section>
 
-      <!-- <section class="gallery">
+      <section class="gallery">
         <div class="container">
           <p class="pre__title pre__title--dark gallery__pre-title">На латинском языке “барба” означает “борода”</p>
           <h2 class="visually-hidden">Фотогаллерея</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img src="./img/gallery1.jpg" alt="" width="270" height="360">
+               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery1-desktop@1x.jpg 1x, ./img/galery1-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery1-tablet@1x.jpg 1x, ./img/galery1-tablet@2x.jpg 2x"
+                />
+                  <source
+                  media="(max-width:767px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery1-mob@1x.jpg 1x, ./img/galery1-mob@2x.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+              <!-- <img src="./img/gallery1.jpg" alt="" width="270" height="360"> -->
             </li>
             <li class="gallery__item">
-              <img src="./img/gallery2.jpg" alt="" width="270" height="360">
+               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery2-desktop@1x.jpg 1x, ./img/galery2-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery2-tablet@1x.jpg 1x, ./img/galery2-tablet@2x.jpg 2x"
+                />
+                  <source
+                  media="(max-width:767px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery2-mob@1x.jpg 1x, ./img/galery2-mob@2x.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+              <!-- <img src="./img/gallery2.jpg" alt="" width="270" height="360"> -->
             </li>
             <li class="gallery__item">
-              <img src="./img/gallery3.jpg" alt="" width="270" height="360">
+               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery3-desktop@1x.jpg 1x, ./img/galery3-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery3-tablet@1x.jpg 1x, ./img/galery3-tablet@2x.jpg 2x"
+                />
+                  <source
+                  media="(max-width:767px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery3-mob@1x.jpg 1x, ./img/galery3-mob@2x.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+              <!-- <img src="./img/gallery3.jpg" alt="" width="270" height="360"> -->
             </li>
             <li class="gallery__item">
-              <img src="./img/gallery4.jpg" alt="" width="270" height="360">
+               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery4-desktop@1x.jpg 1x, ./img/galery4-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery4-tablet@1x.jpg 1x, ./img/galery4-tablet@2x.jpg 2x"
+                />
+                  <source
+                  media="(max-width:767px)"
+                  type="image/jpeg" 
+                  srcset="./img/galery4-mob@1x.jpg 1x, ./img/galery4-mob@2x.jpg 2x"
+                />
+                <img src="#" alt="" />
+              </picture>
+              <!-- <img src="./img/gallery4.jpg" alt="" width="270" height="360"> -->
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <div class="feedback" id="contacts">
+      <div class="feedback" id="contacts">
         <section class="online">
         <form action="" class="modal__form">
           <p class="form__text section__title--light">Онлайн-запись</p>
@@ -519,12 +591,13 @@
           </label>
           <button class="form__btn btn btn-light" type="submit">отправить</button>
         </form>
-         
+          
       </section>
       <section class="contacts" >
-        <address class="contacts__address">
-          <h2 class="section__title section__title--light contacts__title">Контакты</h2>
-          <ul class="contacts__list">
+         <h2 class="section__title section__title--light contacts__title">Контакты</h2>
+        <div class="contacts__wrapper">
+         <address class="contacts__address">
+            <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__link" href="" target="_blank" rel="noreferrer noopener">
                 <svg class="contacts__icon" width="24" height="24">
@@ -549,13 +622,17 @@
             </li>
           </ul>
         </address>
+        <div class="contacts__worktime">
         <p class="pre__title pre__title--contacts">время работы</p>
         <p class="contacts__text">Ежедневно с 9:00 до 22:00</p>
-       
+       </div>
+       </div>
       </section>
-      </div> -->
+      </div> 
+
     </main>
-    <!-- <footer class="footer">
+
+    <footer class="footer">
       <div class="container footer__container">
       <p class="footer__copy">&copy; Copyright 2020</p>
       <ul class="footer__list">
@@ -567,7 +644,8 @@
         </li>
       </ul>
       </div>
-    </footer> -->
+    </footer>
+    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn btn btn-dark" data-modal-close>

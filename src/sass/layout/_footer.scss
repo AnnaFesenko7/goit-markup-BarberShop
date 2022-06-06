@@ -16,21 +16,21 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--third-text-color);
+  @media screen and(max-width:767px) {
+    padding-top: 40px;
+  }
 }
 
 .footer__list {
   display: flex;
   align-items: center;
-
-  
-&::before {
-  content: '';
-  width: 60px;
-  height: 1px;
-  background-color: var(--second-text-color);
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--second-text-color);
+  }
 }
-}
-
 
 .footer__link {
   font-weight: 600;
