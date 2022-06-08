@@ -16,4 +16,4 @@ var e;!function(t,i){"object"==typeof exports&&"object"==typeof module?module.ex
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("animate.css");var e=require("./js/modal-window"),n=require("./js/navigation"),a=require("./js/modal-menu"),i=require("./js/menu-navigation"),r=t(require("siema"));function t(e){return e&&e.__esModule?e:{default:e}}(0,e.manageModalWindow)(),(0,n.manageNavigation)(),(0,a.manageModalMenu)(),(0,i.manageMenuNavigation)();const u=new r.default;document.querySelector(".prev").addEventListener("click",()=>u.prev()),document.querySelector(".next").addEventListener("click",()=>u.next());
 },{"./sass/main.scss":"clu1","animate.css":"TOx8","./js/modal-window":"WcsN","./js/navigation":"qr24","./js/modal-menu":"rbPx","./js/menu-navigation":"YMda","siema":"gVZh"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-markup-BarberShop/src.4fbe8dfc.js.map
+//# sourceMappingURL=/goit-markup-BarberShop/src.27ef5c38.js.map
